@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R Nandeesh | Frontend Developer & UI/UX Designer</title>
+    <meta name="description" content="Portfolio of R Nandeesh, an intermediate Frontend Developer and UI/UX Designer specializing in building modern, user-centric web applications.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">RN<span class="dot">.</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-sun light-icon"></i>
+                    <i class="fas fa-moon dark-icon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary d-none-sm">Contact Me</a>
+                <div class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="#about" class="mobile-link">About</a></li>
+                <li><a href="#skills" class="mobile-link">Skills</a></li>
+                <li><a href="#projects" class="mobile-link">Projects</a></li>
+                <li><a href="#experience" class="mobile-link">Experience</a></li>
+                <li><a href="#contact" class="mobile-link">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text reveal-up">
+                        <div class="tagline blur-text">UI/UX Designer & Frontend Developer</div>
+                        <h1 class="hero-title"><span class="split-name">R Nandeesh</span><br>Crafting Digital Experiences<br>That <span class="gradient-text">Inspire & Convert.</span></h1>
+                        <p class="hero-subtitle blur-text">Bridging the gap between aesthetic design and functional frontend development. I build modern, scalable, and user-centric web applications.</p>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+                            <a href="#contact" class="btn btn-outline btn-lg">Let's Talk</a>
+                        </div>
+                    </div>
+                    <div class="hero-image-container reveal-left">
+                        <div class="hero-image-wrapper">
+                            <!-- Placeholder image, user should add their image as profile.jpg -->
+                            <img src="images/WhatsApp Image 2026-04-29 at 21.54.01 (1).jpeg" alt="R Nandeesh" class="hero-profile-img" onerror="this.src='https://ui-avatars.com/api/?name=R+Nandeesh&background=3b82f6&color=fff&size=512'">
+                            <div class="hero-image-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-bg-glow"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding bg-alt">
+            <div class="container">
+                <h2 class="section-title reveal-up">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text reveal-left">
+                        <p class="lead-text">Hi, I'm <strong>R Nandeesh</strong>, a Frontend Developer and UI/UX Designer with a relentless focus on creating real-world solutions.</p>
+                        <p>I don't just write code or draw screens; I solve problems. My dual skill set allows me to design premium user interfaces and bring them to life with clean, responsive code. I leverage AI tools to enhance my design process and productivity, ensuring I deliver high-quality results efficiently.</p>
+                        <p>Currently seeking internship and entry-level roles in forward-thinking product companies and startups where I can contribute to meaningful projects.</p>
+                    </div>
+                    <div class="about-stats reveal-right">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-compass"></i></div>
+                            <h3>Design</h3>
+                            <p>Prototyping, Wireframing, User Research</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+                            <h3>Development</h3>
+                            <p>Responsive, Accessible, Performant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="container">
+                <h2 class="section-title reveal-up">Core Competencies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category reveal-up" style="transition-delay: 0.1s">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3>Frontend</h3>
+                        <ul class="skill-list">
+                            <li><span>HTML5</span></li>
+                            <li><span>CSS3 (Flexbox, Grid, Animations)</span></li>
+                            <li><span>JavaScript (DOM, ES6+)</span></li>
+                            <li><span>Responsive Web Design</span></li>
+                        </ul>
+                    </div>
+                    <div class="skill-category reveal-up" style="transition-delay: 0.2s">
+                        <div class="skill-icon"><i class="fas fa-pen-nib"></i></div>
+                        <h3>Design</h3>
+                        <ul class="skill-list">
+                            <li><span>UI/UX Design</span></li>
+                            <li><span>Wireframing & Prototyping</span></li>
+                            <li><span>Visual Creativity & Editing</span></li>
+                            <li><span>Design Systems</span></li>
+                        </ul>
+                    </div>
+                    <div class="skill-category reveal-up" style="transition-delay: 0.3s">
+                        <div class="skill-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <h3>Tools & Workflows</h3>
+                        <ul class="skill-list">
+                            <li><span>Figma</span></li>
+                            <li><span>Git & GitHub</span></li>
+                            <li><span>AI Productivity Tools</span></li>
+                            <li><span>VS Code</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding bg-alt">
+            <div class="container">
+                <h2 class="section-title reveal-up">Featured Projects</h2>
+                <p class="section-desc reveal-up">Real-world solutions built with modern technologies.</p>
+                
+                <div class="projects-wrapper">
+                    <!-- Project 1 -->
+                    <div class="project-card reveal-up">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="project-label">Full-Stack Application</div>
+                                <div class="project-links-icon">
+                                    <a href="#" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                                    <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Namma Ooru Auto</h3>
+                            <p class="project-desc"><strong>Problem:</strong> Local auto drivers struggled with fragmented bookings, and users faced unpredictable pricing.</p>
+                            <p class="project-desc"><strong>Solution:</strong> Designed and built a centralized booking platform connecting local drivers directly with commuters.</p>
+                            
+                            <div class="project-highlights">
+                                <span><i class="fas fa-check"></i> Seamless Booking Flow</span>
+                                <span><i class="fas fa-check"></i> Driver Dashboard</span>
+                            </div>
+
+                            <ul class="tech-stack">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>UI/UX</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card reveal-up" style="transition-delay: 0.1s">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="project-label">Web Application</div>
+                                <div class="project-links-icon">
+                                    <a href="#" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                                    <a href="https://seabirdstocks.lovable.app" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Stock Management Web App</h3>
+                            <p class="project-desc"><strong>Problem:</strong> Small businesses relied on manual spreadsheets for inventory tracking, leading to errors and stockouts.</p>
+                            <p class="project-desc"><strong>Solution:</strong> Developed a responsive dashboard for real-time inventory tracking, low-stock alerts, and simple reporting.</p>
+                            
+                            <div class="project-highlights">
+                                <span><i class="fas fa-check"></i> Real-time Tracking</span>
+                                <span><i class="fas fa-check"></i> Automated Alerts</span>
+                            </div>
+
+                            <ul class="tech-stack">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Chart.js</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card reveal-up" style="transition-delay: 0.2s">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="project-label">UI/UX Redesign</div>
+                                <div class="project-links-icon">
+                                    <a href="#" aria-label="Behance Case Study"><i class="fab fa-behance"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">E-Commerce App Redesign</h3>
+                            <p class="project-desc"><strong>Problem:</strong> An existing app had high cart abandonment rates due to a confusing checkout flow and outdated UI.</p>
+                            <p class="project-desc"><strong>Solution:</strong> Conducted a complete UX overhaul, streamlining the checkout process and creating a modern, accessible design system.</p>
+                            
+                            <div class="project-highlights">
+                                <span><i class="fas fa-check"></i> +35% Conversion</span>
+                                <span><i class="fas fa-check"></i> Modern Design System</span>
+                            </div>
+
+                            <ul class="tech-stack">
+                                <li>Figma</li>
+                                <li>User Research</li>
+                                <li>Prototyping</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="experience section-padding">
+            <div class="container">
+                <h2 class="section-title reveal-up">Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Current</div>
+                            <h3>Frontend Developer & UI/UX Designer</h3>
+                            <div class="timeline-org">Freelance / Personal Projects</div>
+                            <p>Building real-world applications, focusing on scalable CSS architectures, interactive JavaScript features, and user-centric designs.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Previous</div>
+                            <h3>UI/UX Learning & Implementation</h3>
+                            <div class="timeline-org">Self-Taught & Bootcamps</div>
+                            <p>Mastered modern design principles, wireframing, and creating high-fidelity prototypes using Figma. Explored AI tools to accelerate design workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding bg-alt">
+            <div class="container text-center">
+                <h2 class="section-title reveal-up">Let's Build Something Great</h2>
+                <p class="contact-desc reveal-up">I'm currently open for internships and entry-level roles. If you're looking for a developer who understands design, let's connect.</p>
+                <div class="contact-wrapper reveal-up">
+                    <div class="contact-cards">
+                        <a href="mailto:konandysh25@gmail.com" class="contact-card">
+                            <div class="icon-wrapper"><i class="fas fa-envelope"></i></div>
+                            <h3>Email Me</h3>
+                            <span>konandysh25@gmail.com</span>
+                        </a>
+                        <a href="tel:8667881160" class="contact-card">
+                            <div class="icon-wrapper"><i class="fas fa-phone"></i></div>
+                            <h3>Call Me</h3>
+                            <span>8667881160</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/r-nandeesh-46167036a" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="icon-wrapper"><i class="fab fa-linkedin"></i></div>
+                            <h3>Connect</h3>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://www.instagram.com/__spideyyy__x_?igsh=MXYzYTA4bXhqajAwaQ==" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="icon-wrapper"><i class="fab fa-instagram"></i></div>
+                            <h3>Instagram</h3>
+                            <span>@__spideyyy__x_</span>
+                        </a>
+                    </div>
+                    <div class="contact-form-container">
+                        <h3>Send a Message</h3>
+                        <form action="#" method="POST" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile">Mobile</label>
+                                <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">RN<span class="dot">.</span></div>
+                <p>&copy; <span id="year"></span> R Nandeesh. All rights reserved. <span class="footer-divider">|</span> <span class="footer-time">Local Time: <span id="current-time">--:--:--</span></span></p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/r-nandeesh-46167036a" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/__spideyyy__x_?igsh=MXYzYTA4bXhqajAwaQ==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:konandysh25@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ghost Cursor Container -->
+    <div id="ghost-cursor-container" style="position: fixed; inset: 0; pointer-events: none; z-index: 9999;"></div>
+
+    <script type="module" src="ghost-cursor.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
